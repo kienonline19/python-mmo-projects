@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800">
+  <!-- Background -->
+  <rect width="600" height="800" fill="white" />
+  
+  <!-- Start Block -->
+  <rect x="250" y="50" width="100" height="50" rx="5" ry="5" fill="white" stroke="black" stroke-width="2" />
+  <text x="300" y="80" text-anchor="middle" font-family="Arial" font-size="16">Bắt đầu</text>
+  
+  <!-- Input Block -->
+  <rect x="200" y="130" width="200" height="60" rx="0" ry="0" fill="white" stroke="black" stroke-width="2" />
+  <text x="300" y="155" text-anchor="middle" font-family="Arial" font-size="16">Nhập hệ phương trình</text>
+  <text x="300" y="180" text-anchor="middle" font-family="Arial" font-size="16">a₁x + b₁y = c₁</text>
+  <text x="300" y="200" text-anchor="middle" font-family="Arial" font-size="16">a₂x + b₂y = c₂</text>
+  
+  <!-- Calculate Block -->
+  <rect x="200" y="220" width="200" height="80" rx="0" ry="0" fill="white" stroke="black" stroke-width="2" />
+  <text x="300" y="245" text-anchor="middle" font-family="Arial" font-size="16">Tính định thức</text>
+  <text x="300" y="270" text-anchor="middle" font-family="Arial" font-size="16">D = a₁b₂ - a₂b₁</text>
+  <text x="300" y="290" text-anchor="middle" font-family="Arial" font-size="16">D₁ = c₁b₂ - c₂b₁</text>
+  <text x="300" y="310" text-anchor="middle" font-family="Arial" font-size="16">D₂ = a₁c₂ - a₂c₁</text>
+  
+  <!-- Decision D=0? -->
+  <polygon points="300,330 350,370 300,410 250,370" fill="white" stroke="black" stroke-width="2" />
+  <text x="300" y="375" text-anchor="middle" font-family="Arial" font-size="16">D = 0?</text>
+  
+  <!-- Decision D1=D2=0? -->
+  <polygon points="450,370 500,410 450,450 400,410" fill="white" stroke="black" stroke-width="2" />
+  <text x="450" y="405" text-anchor="middle" font-family="Arial" font-size="14">D₁ = D₂ = 0?</text>
+  <text x="450" y="425" text-anchor="middle" font-family="Arial" font-size="12">(a₁/a₂ = b₁/b₂ = c₁/c₂)</text>
+  
+  <!-- Calculate Solutions -->
+  <rect x="200" y="440" width="200" height="70" rx="0" ry="0" fill="white" stroke="black" stroke-width="2" />
+  <text x="300" y="465" text-anchor="middle" font-family="Arial" font-size="16">Tính nghiệm</text>
+  <text x="300" y="490" text-anchor="middle" font-family="Arial" font-size="16">x = D₁/D</text>
+  <text x="300" y="510" text-anchor="middle" font-family="Arial" font-size="16">y = D₂/D</text>
+  
+  <!-- Output Solutions -->
+  <rect x="200" y="540" width="200" height="50" rx="0" ry="0" fill="white" stroke="black" stroke-width="2" />
+  <text x="300" y="570" text-anchor="middle" font-family="Arial" font-size="16">Xuất nghiệm x, y</text>
+  
+  <!-- Vô số nghiệm -->
+  <rect x="400" y="480" width="100" height="50" rx="0" ry="0" fill="white" stroke="black" stroke-width="2" />
+  <text x="450" y="510" text-anchor="middle" font-family="Arial" font-size="14">Vô số nghiệm</text>
+  
+  <!-- Vô nghiệm -->
+  <rect x="530" y="410" width="100" height="50" rx="0" ry="0" fill="white" stroke="black" stroke-width="2" />
+  <text x="580" y="440" text-anchor="middle" font-family="Arial" font-size="14">Vô nghiệm</text>
+  
+  <!-- End Block -->
+  <rect x="250" y="620" width="100" height="50" rx="5" ry="5" fill="white" stroke="black" stroke-width="2" />
+  <text x="300" y="650" text-anchor="middle" font-family="Arial" font-size="16">Kết thúc</text>
+  
+  <!-- Connectors -->
+  <!-- Start to Input -->
+  <line x1="300" y1="100" x2="300" y2="130" stroke="black" stroke-width="2" />
+  <polygon points="300,130 295,120 305,120" fill="black" />
+  
+  <!-- Input to Calculate -->
+  <line x1="300" y1="190" x2="300" y2="220" stroke="black" stroke-width="2" />
+  <polygon points="300,220 295,210 305,210" fill="black" />
+  
+  <!-- Calculate to Decision -->
+  <line x1="300" y1="300" x2="300" y2="330" stroke="black" stroke-width="2" />
+  <polygon points="300,330 295,320 305,320" fill="black" />
+  
+  <!-- Decision to Decision2 (Yes) -->
+  <line x1="350" y1="370" x2="400" y2="370" stroke="black" stroke-width="2" />
+  <polygon points="400,370 390,365 390,375" fill="black" />
+  <text x="370" y="360" text-anchor="middle" font-family="Arial" font-size="14">Có</text>
+  
+  <!-- Decision to Calculate Solutions (No) -->
+  <line x1="300" y1="410" x2="300" y2="440" stroke="black" stroke-width="2" />
+  <polygon points="300,440 295,430 305,430" fill="black" />
+  <text x="320" y="425" text-anchor="middle" font-family="Arial" font-size="14">Không</text>
+  
+  <!-- Calculate Solutions to Output -->
+  <line x1="300" y1="510" x2="300" y2="540" stroke="black" stroke-width="2" />
+  <polygon points="300,540 295,530 305,530" fill="black" />
+  
+  <!-- Output to End -->
+  <line x1="300" y1="590" x2="300" y2="620" stroke="black" stroke-width="2" />
+  <polygon points="300,620 295,610 305,610" fill="black" />
+  
+  <!-- Decision2 to Vô số nghiệm (Yes) -->
+  <line x1="450" y1="450" x2="450" y2="480" stroke="black" stroke-width="2" />
+  <polygon points="450,480 445,470 455,470" fill="black" />
+  <text x="470" y="465" text-anchor="middle" font-family="Arial" font-size="14">Có</text>
+  
+  <!-- Decision2 to Vô nghiệm (No) -->
+  <line x1="500" y1="410" x2="530" y2="410" stroke="black" stroke-width="2" />
+  <polygon points="530,410 520,405 520,415" fill="black" />
+  <text x="515" y="400" text-anchor="middle" font-family="Arial" font-size="14">Không</text>
+  
+  <!-- Vô số nghiệm to End -->
+  <line x1="450" y1="530" x2="450" y2="590" stroke="black" stroke-width="2" />
+  <line x1="450" y1="590" x2="300" y2="590" stroke="black" stroke-width="2" />
+  <polygon points="300,590 310,585 310,595" fill="black" />
+  
+  <!-- Vô nghiệm to End -->
+  <line x1="580" y1="460" x2="580" y2="590" stroke="black" stroke-width="2" />
+  <line x1="580" y1="590" x2="450" y2="590" stroke="black" stroke-width="2" />
+</svg>
